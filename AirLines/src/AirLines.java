@@ -1,46 +1,59 @@
 public class AirLines {
+    String airlineName;
+    String country;
+    int fleetSize;
+    int destinations;
+    String hub;
+    boolean international;
+    double foundingYear;
+    String logoColor;
+    double revenue;
+    String slogan;
 
-        String airlineName;
-        String destination;
-        String departureTime;
-        int flightNumber;
-        int passengers;
-        double ticketPrice;
-        String seatType;
-        String gate;
-        boolean international;
-        String pilotName;
+    public AirLines() {
 
-        public AirLines() {
-            this("Unknown", "Unknown", "00:00", 0, 0, 0.0, "Economy", "A1", false, "Unknown");
-        }
-
-        public AirLines(String airlineName, String destination) {
-            this(airlineName, destination, "00:00", 0, 0, 0.0, "Economy", "A1", false, "Unknown");
-        }
-
-        public AirLines(String airlineName, String destination, String departureTime, int flightNumber) {
-            this(airlineName, destination, departureTime, flightNumber, 0, 0.0, "Economy", "A1", false, "Unknown");
-        }
-
-        public AirLines(String airlineName, String destination, String departureTime, int flightNumber, int passengers, double ticketPrice) {
-            this(airlineName, destination, departureTime, flightNumber, passengers, ticketPrice, "Economy", "A1", false, "Unknown");
-        }
-
-        public AirLines(String airlineName, String destination, String departureTime, int flightNumber, int passengers, double ticketPrice, String seatType, String gate, boolean international, String pilotName) {
-            this.airlineName = airlineName;
-            this.destination = destination;
-            this.departureTime = departureTime;
-            this.flightNumber = flightNumber;
-            this.passengers = passengers;
-            this.ticketPrice = ticketPrice;
-            this.seatType = seatType;
-            this.gate = gate;
-            this.international = international;
-            this.pilotName = pilotName;
-        }
-
-        public void info() {
-            System.out.println("Airline: " + airlineName + ", Destination: " + destination);
-        }
     }
+
+    public AirLines(String airlineName, String country) {
+        this.airlineName = airlineName;
+        this.country = country;
+    }
+
+    public AirLines(String airlineName, String country, int fleetSize, int destinations) {
+        this(airlineName, country);
+        this.fleetSize = fleetSize;
+        this.destinations = destinations;
+    }
+
+    public AirLines(String airlineName, String country, int fleetSize, int destinations, String hub, boolean international) {
+        this(airlineName, country, fleetSize, destinations);
+        this.hub = hub;
+        this.international = international;
+    }
+
+    public AirLines(String airlineName, String country, int fleetSize, int destinations, String hub, boolean international, double foundingYear, String logoColor, double revenue, String slogan) {
+        this(airlineName, country, fleetSize, destinations);
+        this.hub = hub;
+        this.international = international;
+        this.foundingYear = foundingYear;
+        this.logoColor = logoColor;
+        this.revenue = revenue;
+        this.slogan = slogan;
+    }
+
+    public void displayInfo() {
+        System.out.println("------ Airline Information ------");
+        System.out.println("Airline Name: " + airlineName);
+        System.out.println("Country: " + country);
+        System.out.println("Fleet Size: " + fleetSize);
+        System.out.println("Destinations: " + destinations);
+        System.out.println("Hub: " + hub);
+        System.out.println("International: " + international);
+        System.out.println("Founding Year: " + foundingYear);
+        System.out.println("Logo Color: " + logoColor);
+        System.out.println("Revenue: $" + revenue + " billion");
+        System.out.println("Slogan: " + slogan);
+        System.out.println();
+    }
+}
+
