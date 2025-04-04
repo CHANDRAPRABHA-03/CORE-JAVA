@@ -10,4 +10,3 @@ public class Umbrella {
             System.out.println("Umbrella is opened in the rain");
         }
     }
-
