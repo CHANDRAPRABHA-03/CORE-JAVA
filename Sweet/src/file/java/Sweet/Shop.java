@@ -16,6 +16,6 @@ public class Shop {
         }
     }
     public void box(){
-        System.out.println("Running in CHain method ");
+        System.out.println("Running in box method ");
     }
 }

@@ -1,4 +1,4 @@
-public class AirLines {
+class AirLines {
     String airlineName;
     String country;
     int fleetSize;
@@ -32,9 +32,7 @@ public class AirLines {
     }
 
     public AirLines(String airlineName, String country, int fleetSize, int destinations, String hub, boolean international, double foundingYear, String logoColor, double revenue, String slogan) {
-        this(airlineName, country, fleetSize, destinations);
-        this.hub = hub;
-        this.international = international;
+        this(airlineName, country, fleetSize, destinations,hub, international);
         this.foundingYear = foundingYear;
         this.logoColor = logoColor;
         this.revenue = revenue;

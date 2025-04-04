@@ -1,4 +1,4 @@
-public class AirLinesRunner {
+class AirLinesRunner {
     public static void main(String[] args) {
 
         AirLines  defaultAirline = new AirLines ();

@@ -1,4 +1,4 @@
-public class SolarSystem {
+class SolarSystem {
         int noOfPlanets;
         String planetNames;
         String planetSize;
@@ -36,9 +36,7 @@ public class SolarSystem {
         }
 
         public SolarSystem(int noOfPlanets, String planetNames, String planetSize, String noOfMoons, String galaxy, boolean habitable, double age, String planetColor, double planetWeight, String planetDistanceFromSun) {
-            this(noOfPlanets, planetNames, planetSize, noOfMoons);
-            this.galaxy = galaxy;
-            this.habitable = habitable;
+            this(noOfPlanets, planetNames, planetSize, noOfMoons,galaxy,habitable);
             this.age = age;
             this.planetColor = planetColor;
             this.planetWeight = planetWeight;

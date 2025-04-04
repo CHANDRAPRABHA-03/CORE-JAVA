@@ -1,4 +1,4 @@
-public class ElectronicsInfo {
+ class ElectronicsInfo {
     String brand;
     String model;
     String type;
@@ -32,9 +32,7 @@ public class ElectronicsInfo {
     }
 
     public ElectronicsInfo(String brand, String model, String type, double price, int warrantyYears, boolean isSmartDevice, double powerConsumption, String color, double weight, String dimensions) {
-        this(brand, model, type, price);
-        this.warrantyYears = warrantyYears;
-        this.isSmartDevice = isSmartDevice;
+        this(brand, model, type, price, warrantyYears,isSmartDevice);
         this.powerConsumption = powerConsumption;
         this.color = color;
         this.weight = weight;

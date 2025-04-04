@@ -1,4 +1,4 @@
-public class ElectronicsInfoRunner {
+ class ElectronicsInfoRunner {
     public static void main(String[] args) {
         ElectronicsInfo defaultDevice = new ElectronicsInfo();
         ElectronicsInfo smartphone = new ElectronicsInfo("Apple", "iPhone 14", "Smartphone", 999.99, 2, true, 15, "Black", 0.174, "146.7 x 71.5 x 7.8 mm");
