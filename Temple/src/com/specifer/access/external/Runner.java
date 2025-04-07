@@ -6,7 +6,7 @@ public class Runner {
     public static void main(String[] args) {
 
         SpecialDarshan specialDarshan = new SpecialDarshan();
-        specialDarshan.Tempdisplay();
+        specialDarshan.TempDisplay();
         Donation donation = new Donation();
         donation.outsideSpace();
     }

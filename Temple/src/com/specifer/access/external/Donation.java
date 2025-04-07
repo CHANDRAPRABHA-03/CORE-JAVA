@@ -6,7 +6,7 @@ public class Donation {
 
     public Donation(){
 
-        System.out.println("Runnnig external Donation construct");
+        System.out.println("Running external Donation construct");
     }
     public void outsideSpace(){
         System.out.println("Running external outsideSpace method and calling public method from temple");

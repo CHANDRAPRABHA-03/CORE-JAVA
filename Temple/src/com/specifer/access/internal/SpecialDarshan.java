@@ -6,8 +6,8 @@ public class SpecialDarshan {
         public SpecialDarshan(){
             System.out.println("Running SpecialDarshan const");
         }
-        public void Tempdisplay(){
-            System.out.println("accessing public and defualt access specifiers from internal package");
+        public void TempDisplay(){
+            System.out.println("accessing public and default access specifiers from internal package");
             Temple temple = new Temple();
             temple.darshan_hall();
             temple.ticket_counter();
