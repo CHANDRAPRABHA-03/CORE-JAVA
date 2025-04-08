@@ -1,13 +1,13 @@
 package com.access.specifier.external;
 
-import com.access.specifier.internal.note;
+import com.specifier.access.internal.Mint;
 
-public class CoinRunner {
-    public static void main(String[] args){
+public class Runner {
+    public static void main(String[] args) {
+        Mint mint = new Mint();
+        mint.createCoin();
 
-        note Note = new note();
-        note.Display();
-        GoldCoin goldCoin = new GoldCoin();
-        goldCoin.brozneCoin();
+        Bank bank = new Bank();
+        bank.depositCoin();
     }
 }

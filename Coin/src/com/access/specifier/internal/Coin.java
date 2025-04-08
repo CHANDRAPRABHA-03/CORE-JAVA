@@ -1,16 +1,21 @@
 package com.access.specifier.internal;
 
 public class Coin {
-    public Coin(){
-        System.out.println(" In no-arg coin constructor running");
+
+    public Coin() {
+        System.out.println("In no-arg Coin constructor running");
     }
-    public void toss(){
-        System.out.println(" running public in toss");
+
+    public void flip() {
+        System.out.println("Running public flip method");
     }
-    void head(){
-        System.out.println("running in default package");
+
+    void inspectEdges() {
+        System.out.println("Running package-default inspectEdges method");
     }
-    private void tail(){
-        System.out.println("  running in private");
+
+    private void metalComposition() {
+        System.out.println("Running private metalComposition method");
     }
 }
+
