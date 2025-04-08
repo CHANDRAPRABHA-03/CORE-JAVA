@@ -1,8 +1,8 @@
 package com.access.specifier.external;
 
-import com.specifier.access.internal.Mint;
+import com.access.specifier.internal.Mint;
 
-public class Runner {
+public class CoinRunner {
     public static void main(String[] args) {
         Mint mint = new Mint();
         mint.createCoin();
