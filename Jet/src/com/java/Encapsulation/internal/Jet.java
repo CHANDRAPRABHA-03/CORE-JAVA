@@ -1,7 +1,7 @@
 package com.java.Encapsulation.internal;
 
 public class Jet {
-    private String model = "Falcon X";
+    private String model = "Falcon ";
     private String manufacturer = "SkyTech Aerospace";
     private double maxSpeed = 2400.5; // in km/h
     private int seatingCapacity = 2;
