@@ -10,7 +10,7 @@ public class JetUser {
         System.out.println("Seating Capacity: " + jet.getSeatingCapacity());
         System.out.println("Military Jet: " + jet.getIsMilitary());
 
-        // Update jet details
+
         jet.setModel("Lightning Z");
         jet.setManufacturer("AeroDynamics Ltd.");
         jet.setMaxSpeed(3200.0);
