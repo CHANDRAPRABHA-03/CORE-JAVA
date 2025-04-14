@@ -2,9 +2,9 @@ package com.xworkz.Override.external;
 
 import com.xworkz.Override.internal.Carrot;
 
-public class Vegitable extends Carrot {
+public class Vegitables extends Carrot {
 
-    public Vegitable() {
+    public Vegitables() {
         System.out.println("Vegitable: No-arg constructor");
     }
 
