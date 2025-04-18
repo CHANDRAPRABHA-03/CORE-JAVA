@@ -14,11 +14,20 @@ public class Banana {
         System.out.println("no argument constructor of Banana");
     }
 
-    // Parameterized constructor
-    public Banana(String type, String origin, double price, boolean ripe) {
+    // Setter methods
+    public void setType(String type) {
         this.type = type;
+    }
+
+    public void setOrigin(String origin) {
         this.origin = origin;
+    }
+
+    public void setPrice(double price) {
         this.price = price;
+    }
+
+    public void setRipe(boolean ripe) {
         this.ripe = ripe;
     }
 
@@ -38,7 +47,10 @@ public class Banana {
                 System.out.println("Banana is matching..");
                 return true;
             }
+            System.out.println("Bananas are not matching.");
+            return false;
         }
+        System.err.println("Invalid object. Not a Banana.");
         return false;
     }
 }

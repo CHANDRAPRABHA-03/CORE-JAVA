@@ -14,11 +14,20 @@ public class Beans {
         System.out.println("no argument constructor of Beans");
     }
 
-    // Parameterized constructor
-    public Beans(String variety, String color, double weight, boolean fresh) {
+    // Setter methods
+    public void setVariety(String variety) {
         this.variety = variety;
+    }
+
+    public void setColor(String color) {
         this.color = color;
+    }
+
+    public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    public void setFresh(boolean fresh) {
         this.fresh = fresh;
     }
 
@@ -38,7 +47,10 @@ public class Beans {
                 System.out.println("Beans are matching..");
                 return true;
             }
+            System.out.println("Beans are not matching.");
+            return false;
         }
+        System.err.println("Invalid object. Not Beans.");
         return false;
     }
 }

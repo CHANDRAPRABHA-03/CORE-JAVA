@@ -14,11 +14,20 @@ public class Bike {
         System.out.println("no argument constructor of Bike");
     }
 
-    // Parameterized constructor
-    public Bike(String brand, String color, int engineCC, double price) {
+    // Setter methods
+    public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public void setColor(String color) {
         this.color = color;
+    }
+
+    public void setEngineCC(int engineCC) {
         this.engineCC = engineCC;
+    }
+
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -38,7 +47,10 @@ public class Bike {
                 System.out.println("Bike is matching..");
                 return true;
             }
+            System.out.println("Bike is not matching.");
+            return false;
         }
+        System.err.println("Invalid object. Not a Bike.");
         return false;
     }
 }

@@ -35,26 +35,61 @@ public class Runner {
         System.out.println("Pencil not match: " + not);
         System.out.println("-----------------------------------------------");
 
-        Banana banana1 = new Banana("Cavendish", "India", 12.5, true);
-        Banana banana2 = new Banana("Robusta", "Ecuador", 10.0, false);
-        Banana banana3 = new Banana("Robusta", "Ecuador", 10.0, false);
+        Banana b1 = new Banana();
+        b1.setType("Cavendish");
+        b1.setOrigin("India");
+        b1.setPrice(10.5);
+        b1.setRipe(true);
 
-        boolean ba = banana2.equals(banana3);
-        boolean noba = banana1.equals(banana3);
+        Banana b2 = new Banana();
+        b2.setType("Cavendish");
+        b2.setOrigin("India");
+        b2.setPrice(10.5);
+        b2.setRipe(true);
 
-        System.out.println("Banana match: " + ba);
-        System.out.println("Banana not match: " + noba);
-        System.out.println("-----------------------------------------------");
+        Banana b3 = new Banana();
+        b3.setType("Red Banana");
+        b3.setOrigin("Kerala");
+        b3.setPrice(15.0);
+        b3.setRipe(false);
 
-        Bike bike1 = new Bike("Yamaha", "Blue", 150, 120000.0);
-        Bike bike2 = new Bike("Honda", "Red", 125, 95000.0);
-        Bike bike3 = new Bike("Honda", "Red", 125, 95000.0);
+        System.out.println(b1);
+        System.out.println(b2);
+        System.out.println(b3);
 
-        boolean mam = bike2.equals(bike3);
-        boolean nunu = bike1.equals(bike3);
+        boolean bananamatch = b1.equals(b2);      // true
+        boolean banananotMatch = b2.equals(b3);   // false
 
-        System.out.println("Bike match: " + ma);
-        System.out.println("Bike not match: " + nun);
+        System.out.println("Banana match result: " + bananamatch);
+        System.err.println("Banana not match result: " + banananotMatch);
+
+        Bike yamaha1 = new Bike();
+        yamaha1.setBrand("Yamaha");
+        yamaha1.setColor("Blue");
+        yamaha1.setEngineCC(150);
+        yamaha1.setPrice(95000.0);
+
+        Bike yamaha2 = new Bike();
+        yamaha2.setBrand("Yamaha");
+        yamaha2.setColor("Blue");
+        yamaha2.setEngineCC(150);
+        yamaha2.setPrice(95000.0);
+
+        Bike royal = new Bike();
+        royal.setBrand("Royal Enfield");
+        royal.setColor("Black");
+        royal.setEngineCC(350);
+        royal.setPrice(180000.0);
+
+        System.out.println(yamaha1);
+        System.out.println(yamaha2);
+        System.out.println(royal);
+
+        boolean bikematch = yamaha1.equals(yamaha2);      // true
+        boolean bikenotMatch = yamaha2.equals(royal);     // false
+
+        System.out.println("Bike match result: " + bikematch);
+        System.err.println("Bike not match result: " + bikenotMatch);
         System.out.println("-----------------------------------------------");
 
         Earphone earphone1 = new Earphone("Boat", "In-Ear", true, 1499.0);
@@ -285,18 +320,33 @@ public class Runner {
         System.out.println("Carrot 3 matches Carrot 4: " + areCarrotsMatching);
         System.out.println("-----------------------------------------------");
 
-        Beans beans1 = new Beans("Kidney", "Red", 0.5, true);
-        Beans beans2 = new Beans("Black", "Black", 0.4, false);
-        Beans beans3 = new Beans("Black", "Black", 0.4, false);
-        Beans beans4 = new Beans("Green", "Green", 0.6, true);
+        Beans beans = new Beans();
+        beans.setVariety("French Beans");
+        beans.setColor("Green");
+        beans.setWeight(0.5);
+        beans.setFresh(true);
 
-        boolean isBeansEqual = beans2.equals(beans3);
-        boolean isBeansDifferent = beans1.equals(beans4);
-        boolean areBeansMatching = beans3.equals(beans4);
+        Beans beans2 = new Beans();
+        beans2.setVariety("French Beans");
+        beans2.setColor("Green");
+        beans2.setWeight(0.5);
+        beans2.setFresh(true);
 
-        System.out.println("Beans 2 matches Beans 3: " + isBeansEqual);
-        System.out.println("Beans 1 does not match Beans 4: " + isBeansDifferent);
-        System.out.println("Beans 3 matches Beans 4: " + areBeansMatching);
+        Beans beans3 = new Beans();
+        beans3.setVariety("Black Beans");
+        beans3.setColor("Black");
+        beans3.setWeight(1.0);
+        beans3.setFresh(false);
+
+        System.out.println(beans);
+        System.out.println(beans2);
+        System.out.println(beans3);
+
+        boolean beansmatch = beans.equals(beans2);      // true
+        boolean beansnotMatch = beans2.equals(beans3);   // false
+
+        System.out.println("Beans match result: " + beansmatch);
+        System.err.println("Beans not match result: " + beansnotMatch);
         System.out.println("-----------------------------------------------");
 
         Sesam sesam1 = new Sesam("Black", "Black", 0.2, true);
@@ -341,19 +391,33 @@ public class Runner {
         System.out.println("Icon 3 matches Icon 4: " + areIconsMatching);
         System.out.println("-----------------------------------------------");
 
-        Apple apple1 = new Apple("Granny Smith", "Green", 0.25, true);
-        Apple apple2 = new Apple("Red Delicious", "Red", 0.3, false);
-        Apple apple3 = new Apple("Red Delicious", "Red", 0.3, false);
-        Apple apple4 = new Apple("Golden Delicious", "Yellow", 0.2, true);
+        Apple a1 = new Apple();
+        a1.setVariety("Fuji");
+        a1.setColor("Red");
+        a1.setWeight(0.25);
+        a1.setIsFresh(true);
 
-        boolean isAppleEqual = apple2.equals(apple3);
-        boolean isAppleDifferent = apple1.equals(apple4);
-        boolean areApplesMatching = apple3.equals(apple4);
+        Apple a2 = new Apple();
+        a2.setVariety("Fuji");
+        a2.setColor("Red");
+        a2.setWeight(0.25);
+        a2.setIsFresh(true);
 
-        System.out.println("Apple 2 matches Apple 3: " + isAppleEqual);
-        System.out.println("Apple 1 does not match Apple 4: " + isAppleDifferent);
-        System.out.println("Apple 3 matches Apple 4: " + areApplesMatching);
-        System.out.println("-----------------------------------------------");
+        Apple a3 = new Apple();
+        a3.setVariety("Granny Smith");
+        a3.setColor("Green");
+        a3.setWeight(0.3);
+        a3.setIsFresh(false);
+
+        System.out.println(a1);
+        System.out.println(a2);
+        System.out.println(a3);
+
+        boolean applematch = a1.equals(a2);      // true
+        boolean applenotMatch = a2.equals(a3);   // false
+
+        System.out.println("Apple match result: " + applematch);
+        System.err.println("Apple not match result: " + applenotMatch);
 
         Milk milk1 = new Milk("Cow", 2.0, 3.5, true);
         Milk milk2 = new Milk("Almond", 1.5, 1.0, true);
