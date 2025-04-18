@@ -15,13 +15,33 @@ public class Runner {
         boolean notMatch = mark3.equals(mark2);
         System.out.println("Marker not match :"+notMatch);
 
-        Cake cake1 = new Cake("Vanilla", 2, "Round", "White");
-        Cake cake2 = new Cake("Chocolate", 3, "Square", "Brown");
-        Cake cake3 = new Cake("Chocolate", 3, "Square", "Brown");
-        boolean ma = cake2.equals(cake3);
-        boolean nun = cake1.equals(cake3);
-        System.out.println("Cake match: " +ma);
-        System.out.println("Cake not match: " + nun);
+        Cake chocolateCake = new Cake();
+        chocolateCake.setColor("Brown");
+        chocolateCake.setCost(500);
+        chocolateCake.setBrand("Monginis");
+        chocolateCake.setMaterial("Chocolate");
+
+        Cake duplicateCake = new Cake();
+        duplicateCake.setColor("Brown");
+        duplicateCake.setCost(500);
+        duplicateCake.setBrand("Monginis");
+        duplicateCake.setMaterial("Chocolate");
+
+        Cake fruitCake = new Cake();
+        fruitCake.setColor("White");
+        fruitCake.setCost(650);
+        fruitCake.setBrand("Baker's Treat");
+        fruitCake.setMaterial("Fruits");
+
+        System.out.println(chocolateCake);
+        System.out.println(duplicateCake);
+        System.out.println(fruitCake);
+
+        boolean cakematch = chocolateCake.equals(duplicateCake);   // true
+        boolean cakenotMatch = duplicateCake.equals(fruitCake);    // false
+
+        System.out.println("Cake match result: " + cakematch);
+        System.err.println("Cake not match result: " + cakenotMatch);
         System.out.println("-----------------------------------------------");
 
         Pencil pencil1 = new Pencil("Apsara", "Black", 10.0, true);

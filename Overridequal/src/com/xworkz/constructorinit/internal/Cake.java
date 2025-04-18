@@ -4,7 +4,6 @@ import java.util.Objects;
 
 public class Cake {
 
-    // Instance variables should be declared at class level
     private String color;
     private int cost;
     private String brand;
@@ -12,14 +11,23 @@ public class Cake {
 
     // No-argument constructor
     public Cake() {
-        System.out.println("no argument constructor");
+        System.out.println("no argument constructor of Cake");
     }
 
-    // Parameterized constructor
-    public Cake(String color, int cost, String brand, String material) {
+    // Setter methods
+    public void setColor(String color) {
         this.color = color;
+    }
+
+    public void setCost(int cost) {
         this.cost = cost;
+    }
+
+    public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public void setMaterial(String material) {
         this.material = material;
     }
 
