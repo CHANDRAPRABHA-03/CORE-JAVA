@@ -1,6 +1,7 @@
 package com.java.intfce.runner;
 
 import com.java.intfce.external.*;
+import com.java.intfce.internal.Mobile;
 import com.java.intfce.internal.Mouse;
 import com.java.intfce.internal.Network;
 import com.java.intfce.internal.Refrigerator;
@@ -28,6 +29,12 @@ public class Runner {
 
         System.out.println("*********");
 
+        Mobile mobile = new OppoPhone();
+        Mobile mobile1 = new PocoPhone();
+        NewMobile newMobile = new NewMobile(mobile1);
+        newMobile.Communication();
+
+        System.out.println("***********");
 
 
     }
