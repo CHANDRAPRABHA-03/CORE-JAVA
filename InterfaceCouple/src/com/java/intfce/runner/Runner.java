@@ -1,10 +1,7 @@
 package com.java.intfce.runner;
 
 import com.java.intfce.external.*;
-import com.java.intfce.internal.Mobile;
-import com.java.intfce.internal.Mouse;
-import com.java.intfce.internal.Network;
-import com.java.intfce.internal.Refrigerator;
+import com.java.intfce.internal.*;
 
 public class Runner {
     public static void main(String[] args) {
@@ -36,6 +33,9 @@ public class Runner {
 
         System.out.println("***********");
 
-
+        WaterFilter waterFilter = new AquaWaterFilter();
+        WaterFilter waterFilter1 = new HavellsWaterFilter();
+        NewWaterFilter newWaterFilter = new NewWaterFilter(waterFilter1);
+        newWaterFilter.RemoveDust();
     }
 }
