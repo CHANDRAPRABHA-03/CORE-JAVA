@@ -1,6 +1,7 @@
 package com.java.intfce.runner;
 
 import com.java.intfce.external.*;
+import com.java.intfce.internal.Mouse;
 import com.java.intfce.internal.Network;
 import com.java.intfce.internal.Refrigerator;
 
@@ -17,6 +18,15 @@ public class Runner {
         Refrigerator refrigerator1 = new DoubleDoor();
         NewRefrigerator newRefrigerator = new NewRefrigerator();
         newRefrigerator.Samsung();
+
+        System.out.println("*********");
+
+        Mouse mouse = new SmartMouse();
+        Mouse mouse1 = new WiredMouse();
+        NewMouse newMouse = new NewMouse(mouse);
+        newMouse.Scroll();
+
+        System.out.println("*********");
 
 
 
